@@ -2449,3 +2449,19 @@ input, select, textarea {
 					}
 
 	}
+
+	.dotWork {
+		height: 25px;
+		width: 25px;
+		background-color: #009be3;
+		border-radius: 50%;
+		display: aln-bottom;
+	}
+
+	.dotPersonal {
+		height: 25px;
+		width: 25px;
+		background-color: #9d6aab;
+		border-radius: 50%;
+		display: aln-bottom;
+	}
