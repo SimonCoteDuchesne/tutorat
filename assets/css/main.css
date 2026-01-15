@@ -2451,17 +2451,17 @@ input, select, textarea {
 	}
 
 	.dotWork {
-		height: 40px;
-		width: 40px;
+		height: 5%;
+		width: 2%;
 		background-color: #009be3;
 		border-radius: 50%;
 		display: aln-top;
 	}
 
 	.dotPersonal {
-		height: 40px;
-		width: 40px;
+		height: 5%;
+		width: 2%;
 		background-color: #9d6aab;
 		border-radius: 50%;
-		display: aln-top;
+		display: aln-top
 	}
