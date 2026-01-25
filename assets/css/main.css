@@ -2465,3 +2465,108 @@ input, select, textarea {
 		border-radius: 50%;
 		display: aln-top
 	}
+
+/* the following css is from an Animated quotes carousel imported from codepen:
+https://codepen.io/donovanh/pen/GWKNdz by Donovan Hutchinson
+*/
+
+	$box-shadow: 0 2px 4px 0 rgba(31,0,33,0.50);
+	$animation-duration: 5s;
+	$highlight-color: #38b449;
+
+	$bezier-snappy: cubic-bezier(0,.86,.3,1);
+	$bezier-bouncy: cubic-bezier(1,-0.74,0,1.48);
+	$bezier-sharp: cubic-bezier(.21,.91,.39,.99);
+	$bezier-luxurious: cubic-bezier(.77,0,.35,1);
+
+	.background-2 {
+	  min-height: 10em;
+	  background-image: linear-gradient(180deg, rgba(255,255,255,1) 10%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0.6) 60%, rgba(255,255,255,1) 100%),
+	                    linear-gradient(157deg, #FFD17C 20%, #E77FE9 96%);
+	  background-size: 100% 100%;
+	}
+
+	.quotes-carousel-container {
+	  max-width: 62rem;
+	  height: 12em;
+	  margin: 0 auto;
+	  overflow-x: hidden;
+	  overflow-y: hidden;
+	}
+
+	.quotes-carousel {
+	  position: relative;
+	  min-height: 8em;
+	  width: 100%;
+	  
+	  .quote-person {
+	    background-size: 100%;
+	    border-radius: 50%;
+	    box-shadow: 0 2px 4px 0 rgba(31, 0, 33, 0.5);
+	    height: 7em;
+	    left: calc(50% - 3.5em);
+	    position: absolute;
+	    top: -7em;
+	    width: 7em;
+	    transition: all .4s .5s ease-out;
+	  }
+
+	  .quotee {
+	    display: block;
+	  }
+
+	  .quote {
+	    cursor: pointer;
+	    left: 50%;
+	    opacity: 0;
+	    position: absolute;
+	    top: 50%;
+	    transform: translate(calc(100% + 12rem), -50%) scale(.6);
+	    transition: transform 1s $bezier-luxurious, opacity .5s ease-out;
+	    display: block;
+	    margin: 2em auto 4em;
+	    max-width: 15em;
+	    min-width: 15em;
+	    padding: 1em;
+	    font-size: 1.35em;
+
+	    &.previous {
+	      transform: translate(-150%, -50%) scale(.8);
+	      opacity: .5;
+	      transition: transform 1s $bezier-luxurious, opacity 1s .4s ease-out;
+	      @media only screen and (max-width: 520px) {
+	        transform: translate(-140%, -50%) scale(.8);
+	        .quote-person {
+	          transform: translateX(1rem);
+	        }
+	      }
+	    }
+
+	    &.current {
+	      transform: translate(-50%, -50%);
+	      opacity: 1;
+	      height: auto;
+	    }
+
+	    &.next {
+	      transform: translate(50%, -50%) scale(.8);
+	      opacity: .5;
+	      transition: transform 1s $bezier-luxurious, opacity 1s .6s ease-out;
+	      @media only screen and (max-width: 520px) {
+	        transform: translate(40%, -50%) scale(.8);
+	        .quote-person {
+	          transform: translateX(-1rem);
+	        }
+	      }
+	    }
+
+	    &.remove-left {
+	      transform: translate(calc(-150% - 12rem), -50%) scale(.8);
+	    }
+
+	    &.place-left {
+	      transform: translate(calc(-150% - 12rem), -50%) scale(.8);
+	      transition: none;
+	    }
+	  }
+	}
