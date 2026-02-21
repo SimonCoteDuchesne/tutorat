@@ -43,6 +43,26 @@
 							<!--<br><a href="#tuteur" class="button large scrolly">Expérience du tuteur</a>-->
 						</div>
 					</div>
+					<div class="row">						
+						<div class="col-4 col-5-large col-12-medium"></div>
+						<div class="col-8 col-7-large col-12-medium">
+							<button id="showHideButton" class="button large scrolly" onclick="hideShowCalendarFR()">Afficher le calendrier</button>
+						</div>
+					</div>
+					<div class="row">
+						<div id="calendarHS" class="container" style="display: none;">
+							<div class="row aln-center">
+								<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FToronto&showPrint=0&hl=en_CA&mode=WEEK&src=c2ltb24uYWlkZXNjb2xhaXJlQGdtYWlsLmNvbQ&src=ZW4uY2FuYWRpYW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&src=c2ltb25jb3RlZHVjaGVzbmVAZ21haWwuY29t&color=%23039be5&color=%230b8043&color=%239e69af" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+							</div>
+							<br>
+							<div class="row aln-middle" style="justify-content:center">
+								<span class="dotWork"></span><h2 style="color:#009be3">Tutorat (beu)</h2>
+							</div>
+							<div class="row aln-middle" style="justify-content:center">
+								<span class="dotPersonal"></span><h2 style="color:#9d6aab">Personnel (mauve)</h2>						
+							</div>
+						</div>
+					</div>
 				</div>
 			</article>
 
@@ -225,27 +245,6 @@
 							<hr />
 						</div>
 					</div>
-
-					<!-- Google Calendar -->
-					<div class="col-12">
-						<button id="showHideButton" onclick="hideShowCalendarFR()">Afficher le calendrier</button>
-						<br><br><br><br>
-						<div id="gCalendarLogo" class="row aln-center">
-							<img style="cursor: pointer;" src="images/GoogleCalendarLogo.png" width="240" height=240" onclick="hideShowCalendarFR()">
-						</div>
-						<div id="calendarHS" class="container" style="display: none;">
-							<div class="row aln-middle" style="justify-content:center">
-								<span class="dotWork"></span><h2 style="color:#009be3">Tutorat (bleu)</h2>
-							</div>
-							<div class="row aln-middle" style="justify-content:center">
-								<span class="dotPersonal"></span><h2 style="color:#9d6aab">Personnel (mauve)</h2>						
-							</div>
-							<div class="row aln-center">
-								<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FToronto&showPrint=0&hl=fr_CA&mode=WEEK&src=c2ltb24uYWlkZXNjb2xhaXJlQGdtYWlsLmNvbQ&src=ZW4uY2FuYWRpYW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&src=c2ltb25jb3RlZHVjaGVzbmVAZ21haWwuY29t&color=%23039be5&color=%230b8043&color=%239e69af" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-							</div>
-						</div>
-					</div>
-					<!-- FIN Google Calendar -->
 
 					<footer>
 						<ul id="copyright">
