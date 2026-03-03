@@ -36,30 +36,24 @@
 function hideShowCalendarFR() {
   var x = document.getElementById("calendarHS");
   var y = document.getElementById("showHideButton");
-  var g = document.getElementById("gCalendarLogo");
   if (x.style.display === "none") {
     x.style.display = "block";
     y.textContent="Cacher le calendrier";
-    g.style.display = "none";
   } else {
     x.style.display = "none";
     y.textContent="Afficher le calendrier";
-    g.style.display = "block";
   }
 }
 
 function hideShowCalendarEN() {
   var x = document.getElementById("calendarHS");
   var y = document.getElementById("showHideButton");
-  var g = document.getElementById("gCalendarLogo");
   if (x.style.display === "none") {
     x.style.display = "block";
     y.textContent="Hide the calendar";
-    g.style.display = "none";
   } else {
     x.style.display = "none";
     y.textContent="Show the calendar";
-    g.style.display = "block";
   }
 }
 
@@ -78,7 +72,7 @@ $(function() {
     if (window.carouselRunning) {
       showNextQuote();
     }
-  }, 7000);
+  }, 5000);
 });
 
 /* Carousel stuff */
